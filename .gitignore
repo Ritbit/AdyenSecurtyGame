@@ -1,0 +1,29 @@
+# Android
+*.iml
+.gradle/
+local.properties
+.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+*.apk
+*.aab
+*.ap_
+
+# App build outputs
+app/build/
+
+# Keystore — NEVER commit
+*.jks
+*.keystore
+.env
+
+# Node (mock backend)
+castles-backend/node_modules/
+castles-backend/*.log
+
+# Gradle wrapper jar is intentionally excluded here;
+# add it back if your CI can't download it:
+# !gradle/wrapper/gradle-wrapper.jar

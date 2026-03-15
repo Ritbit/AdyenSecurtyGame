@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Adyen Security Game</string>
+    <string name="enter_code">Enter your 4-digit code</string>
+    <string name="error_invalid">Invalid code. Please try again.</string>
+    <string name="error_network">Network error. Check connection.</string>
+    <string name="error_print">Print failed. Try again.</string>
+    <string name="error_locked">Too many attempts. Try again in %1$d s.</string>
+    <string name="attempts_remaining">%1$d attempt(s) remaining.</string>
+    <string name="tap_to_continue">Tap to continue</string>
+    <string name="printing">Printing…</string>
+    <string name="print_ok">Printed successfully!</string>
+</resources>

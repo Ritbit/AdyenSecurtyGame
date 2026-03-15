@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Success icon: solid green circle with white check mark.
+    Viewport 100×100.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Filled circle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.25"
+        android:pathData="M50,4 C74.3,4 94,23.7 94,48 C94,72.3 74.3,92 50,92
+                          C25.7,92 6,72.3 6,48 C6,23.7 25.7,4 50,4 Z" />
+
+    <!-- Check mark: left leg then right leg -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="6.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M27,50 L42,66 L73,36" />
+</vector>

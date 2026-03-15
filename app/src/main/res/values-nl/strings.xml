@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Adyen Security Game</string>
+    <string name="enter_code">Voer uw 4-cijferige code in</string>
+    <string name="error_invalid">Ongeldige code. Probeer opnieuw.</string>
+    <string name="error_network">Netwerkfout. Controleer de verbinding.</string>
+    <string name="error_print">Afdrukken mislukt. Probeer opnieuw.</string>
+    <string name="error_locked">Te veel pogingen. Probeer opnieuw over %1$d s.</string>
+    <string name="attempts_remaining">Nog %1$d poging(en) over.</string>
+    <string name="tap_to_continue">Tik om door te gaan</string>
+    <string name="printing">Bezig met afdrukken…</string>
+    <string name="print_ok">Afgedrukt!</string>
+</resources>

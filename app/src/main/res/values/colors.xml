@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Adyen brand palette -->
+    <color name="adyen_green">#FF0ABF53</color>
+    <color name="adyen_black">#FF00112C</color>
+    <color name="adyen_white">#FFFFFFFF</color>
+    <color name="adyen_grey">#FFF3F6F9</color>
+
+    <!-- Semantic aliases used in layouts / styles -->
+    <color name="bg_dark">@color/adyen_black</color>
+    <color name="white">@color/adyen_white</color>
+    <color name="text_secondary">@color/adyen_grey</color>
+
+    <!-- Keypad buttons -->
+    <color name="key_bg">#FF00224A</color>           <!-- slightly lighter than black -->
+    <color name="key_bg_secondary">#FF001A3A</color>
+
+    <!-- Dots -->
+    <color name="dot_empty">#FF1A3A5C</color>
+    <color name="dot_filled">@color/adyen_green</color>
+
+    <!-- Accents -->
+    <color name="accent_green">@color/adyen_green</color>
+    <color name="accent_red">#FFFF5252</color>
+
+    <!-- PrintResultActivity backgrounds -->
+    <color name="result_bg_success">@color/adyen_green</color>
+    <color name="result_bg_failure">#FFCC2200</color>
+</resources>

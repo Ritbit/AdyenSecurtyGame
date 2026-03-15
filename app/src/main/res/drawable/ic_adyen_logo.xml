@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Adyen logo converted from SVG to Android VectorDrawable.
+    Original viewBox: 0 0 92 30  — kept as-is so proportions are exact.
+    Rendered in Adyen Green (#0ABF53) via android:tint on the ImageView,
+    or fill directly here in white for the dark background.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="92dp"
+    android:height="30dp"
+    android:viewportWidth="92"
+    android:viewportHeight="30">
+
+    <!-- Left "A" glyph -->
+    <path
+        android:fillColor="#FF0ABF53"
+        android:pathData="M0.667,7 H14 C15.473,7 16.667,8.193 16.667,9.667 V23 H3.333
+                          C1.86,23 0.667,21.807 0.667,20.333 V13.667 H7.333 V19 H10 V11
+                          H0.667 V7 Z" />
+
+    <!-- "W" / double-bar glyph -->
+    <path
+        android:fillColor="#FF0ABF53"
+        android:pathData="M75.333,7 V23 H82 V11 H84.667 V23 H91.333
+                          V9.667 C91.333,8.193 90.14,7 88.667,7 H75.333 Z" />
+
+    <!-- "y" descender glyph -->
+    <path
+        android:fillColor="#FF0ABF53"
+        android:pathData="M38,29.667 H51.333 C52.807,29.667 54,28.473 54,27 V7
+                          H47.333 V19 H44.667 V7 H38 V20.333
+                          C38,21.807 39.193,23 40.667,23 H47.333 V25.667 H38 V29.667 Z" />
+
+    <!-- "e" glyph -->
+    <path
+        android:fillColor="#FF0ABF53"
+        android:pathData="M72.667,23 H59.333 C57.86,23 56.667,21.807 56.667,20.333 V7
+                          H70 C71.473,7 72.667,8.193 72.667,9.667 V16.333
+                          H66 V11 H63.333 V19 H72.667 V23 Z" />
+
+    <!-- "d" glyph -->
+    <path
+        android:fillColor="#FF0ABF53"
+        android:pathData="M35.333,0.333 V23 H22 C20.527,23 19.333,21.807 19.333,20.333
+                          V9.667 C19.333,8.193 20.527,7 22,7 H26 V19 H28.667 V0.333 H35.333 Z" />
+
+</vector>

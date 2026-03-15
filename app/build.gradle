@@ -1,0 +1,77 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace   'com.example.castlesapp'
+    compileSdk  34
+
+    defaultConfig {
+        applicationId "com.example.castlesapp"
+        minSdk      29
+        targetSdk   34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix   "-debug"
+            resValue "string", "build_variant", "DEBUG"
+        }
+        release {
+            minifyEnabled   true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue "string", "build_variant", "RELEASE"
+        }
+    }
+
+    // Both flavors point at the same production endpoint.
+    // The "mock" flavor is kept so you can still run assembleMockDebug
+    // for local testing — just override BACKEND_BASE_URL in a local .env
+    // or change the string below temporarily.
+    flavorDimensions "env"
+    productFlavors {
+        mock {
+            dimension "env"
+            buildConfigField "String", "BACKEND_BASE_URL",
+                    '"https://adyen.ritbit.net/api/secgame"'
+            versionNameSuffix "-mock"
+        }
+        prod {
+            dimension "env"
+            buildConfigField "String", "BACKEND_BASE_URL",
+                    '"https://adyen.ritbit.net/api/secgame"'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    // Castles S1F2 SDK — place .aar in app/libs/ then un-comment:
+    // implementation(name: 'castles_sdk', ext: 'aar')
+
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+
+    testImplementation 'junit:junit:4.13.2'
+}

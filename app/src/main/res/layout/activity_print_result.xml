@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Full-screen print result screen.
+    Background colour is set programmatically (green = success, red = failure).
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/resultRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <!-- Large result icon (✓ or ✗) — animated pop-in -->
+    <ImageView
+        android:id="@+id/ivResultIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="Result icon" />
+
+    <!-- Message text -->
+    <TextView
+        android:id="@+id/tvResultMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:lineSpacingMultiplier="1.25" />
+
+    <!-- Tap hint -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/tap_to_continue"
+        android:textColor="#80FFFFFF"
+        android:textSize="13sp" />
+
+</LinearLayout>
